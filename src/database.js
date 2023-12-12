@@ -1,6 +1,5 @@
 // Pool over Connection because Pool will automatically create and close connections as needed
 const dotenv = require("dotenv")
-const path = require("path")
 const { Pool } = require("pg")
 
 // obtener configuracion de .env
