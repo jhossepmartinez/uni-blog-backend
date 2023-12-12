@@ -2,9 +2,8 @@
 const dotenv = require("dotenv")
 const { Pool } = require("pg")
 
-// obtener configuracion de .env
-dotenv.config({
-})
+// Initialize .env to obtain values
+dotenv.config({})
 
 const pool = new Pool({
     host: process.env.DB_HOST,

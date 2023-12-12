@@ -9,7 +9,7 @@ app.use(express.json())
 
 
 // Routes
-app.use("/api", routes)
+app.use("/api/posts", routes)
 
 
 app.listen(PORT, () => {
