@@ -24,10 +24,10 @@ const getPostById = async (req, res) => {
 
 const createPost = async (req, res) => {
     const { title, summary, content } = req.body
+    console.log(req.body)
     const response = await pool.query("INSERT INTO posts (title, summary, content) VALUES ($1, $2, $3)", [title, summary, content]) 
     console.log(response)
-    res.send("post created")
-
+    res.json({success: true, message: "post created"})
 }
 
 module.exports = {
